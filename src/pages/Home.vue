@@ -33,8 +33,11 @@
         </div>
 
         <div class="col">
-          <q-video id="video" :ratio=16/9
-          src="https://www.youtube.com/embed/_chmTnA--9I"/>
+          <q-video
+            id="video"
+            :ratio="16 / 9"
+            src="https://www.youtube.com/embed/_chmTnA--9I"
+          />
         </div>
       </q-carousel-slide>
     </q-carousel>
@@ -48,7 +51,8 @@
       </div>
 
       <p class="projeto-subheader col-auto q-mt-xl text-no-wrap">
-        LABORATÓRIO DE<br />INOVAÇÃO CIDADÃ
+        LABORATÓRIO DE
+        <br />INOVAÇÃO CIDADÃ
       </p>
     </div>
     <div
@@ -154,9 +158,13 @@
       </p>
     </div>
     <div class="col flex items-center justify-center">
-      <q-icon class="pink" size="40vw" name="language"> </q-icon>
-      <q-btn outline size="1.5vw" color="primary" label="Saiba Mais Aqui">
-      </q-btn>
+      <q-icon class="pink" size="40vw" name="language"></q-icon>
+      <q-btn
+        outline
+        size="1.5vw"
+        color="primary"
+        label="Saiba Mais Aqui"
+      ></q-btn>
     </div>
   </q-page>
 
@@ -218,7 +226,7 @@
         id="maximg"
         class="col-11 no-padding no-margin"
         src="A07F64CF.png"
-        alt=""
+        alt
       />
       <div class="text-5 col-1 row items-center q-pt-md" style="color: #522de2">
         <q-separator
@@ -275,7 +283,10 @@
         EDIÇÕES ANTERIORES
       </p>
       <q-separator class="col-1 yellow" color="yellow" size="3px"></q-separator>
-      <p class="col-3 text-h1 q-pt-xl text-white">MONITORA<br />LABIC</p>
+      <p class="col-3 text-h1 q-pt-xl text-white">
+        MONITORA
+        <br />LABIC
+      </p>
     </div>
   </q-page>
 
@@ -289,11 +300,12 @@
         <span class="text-h5 q-ml-md">encontros</span>
       </div>
       <div class="col-3 column bgpink text-center items-center">
-        <q-btn outline color="yellow" class="col q-ma-lg"
-          ><p class="text-white text-h6">
-            Confira a lista dos<br />Projetos Participantes
-          </p></q-btn
-        >
+        <q-btn outline color="yellow" class="col q-ma-lg">
+          <p class="text-white text-h6">
+            Confira a lista dos
+            <br />Projetos Participantes
+          </p>
+        </q-btn>
       </div>
     </div>
     <q-img
@@ -371,10 +383,9 @@
         conhecimentos, saberes, tecnologias, metodologias, criatividade e
         inovação.
         <br />
-        <br />
-        O Labic Territórios teve apoio do Pontão de Cultura Digital da Escola de
-        Comunicação da UFRJ, da Pró-Reitoria de Extensão da UFRJ, da Fundação
-        Universitária José Bonifácio, da FAPERJ e do CNPq.
+        <br />O Labic Territórios teve apoio do Pontão de Cultura Digital da
+        Escola de Comunicação da UFRJ, da Pró-Reitoria de Extensão da UFRJ, da
+        Fundação Universitária José Bonifácio, da FAPERJ e do CNPq.
       </p>
     </div>
   </q-page>
@@ -409,11 +420,12 @@
         </div>
       </div>
       <div class="col-3 column bgmagenta text-center items-center">
-        <q-btn outline style="color: #8b50ff" class="col q-ma-lg"
-          ><p class="text-white text-h6">
-            Confira a lista dos<br />Projetos Participantes
-          </p></q-btn
-        >
+        <q-btn outline style="color: #8b50ff" class="col q-ma-lg">
+          <p class="text-white text-h6">
+            Confira a lista dos
+            <br />Projetos Participantes
+          </p>
+        </q-btn>
       </div>
     </div>
   </q-page>
@@ -493,7 +505,7 @@
         <div class="col-7 column justify-center">
           <div class="col row items-center">
             <span class="col text-h1 purple text-right">325</span>
-            <span class="col text-h5 q-ml-md">colaboreadores</span>
+            <span class="col text-h5 q-ml-md">colaboradores</span>
           </div>
           <div class="col row items-center">
             <span class="col text-h1 purple text-right">65H</span>
@@ -510,11 +522,12 @@
         </div>
       </div>
       <div class="col-3 column bgyellow text-center items-center">
-        <q-btn style="border: 3px solid #ff4aa1" class="col q-ma-lg"
-          ><p class="text-black text-h6">
-            Confira a lista dos<br />Projetos Participantes
-          </p></q-btn
-        >
+        <q-btn style="border: 3px solid #ff4aa1" class="col q-ma-lg">
+          <p class="text-black text-h6">
+            Confira a lista dos
+            <br />Projetos Participantes
+          </p>
+        </q-btn>
       </div>
     </div>
     <q-img
@@ -522,24 +535,29 @@
       :ratio="16 / 9"
       fit="fill"
       class="col-6 q-mb-xl"
-      src="A07F64CF.png"
+      src="images/Screen Shot 2022-02-15 at 11.19.47.png"
     />
   </q-page>
 
   <q-page class="column">
-    <div class="col-6 row bgpink q-pa-xl">
-      <div class="col-7 row no-wrap justify-evenly">
-        <q-icon v-for="index in 3" :key="index" name="star" size="150px">
-        </q-icon>
+    <div class="col-6 row bgyellow q-pa-xl items-center">
+      <div class="col-6 row justify-evenly">
+        <img
+          class="col q-mr-lg"
+          v-for="index in 3"
+          :key="index"
+          fit="fill"
+          src="images/WhatsApp Image 2021-06-22 at 18.42.39.jpeg"
+        />
       </div>
-      <div class="col-4 column text-right text-white">
-        <p class="text-h3">PROGRAMAÇÃO</p>
-        <q-separator></q-separator>
-        <p class="text-h2">LABIC VIRTUAL</p>
+      <div class="col-5 column text-right text-white">
+        <p class="text-h3 text-white">PROGRAMAÇÃO</p>
+        <q-separator class="bgmagenta" size="3px"></q-separator>
+        <p class="text-h2 text-white q-pt-md">LABIC VIRTUAL</p>
       </div>
-      <p class="col-1 text-h1 vertical-text2">2020</p>
+      <p class="col-1 text-h1 vertical-text2 magenta">2020</p>
     </div>
-    <div class="col-5 row q-ma-md justify-evenly no-wrap">
+    <div class="col-5 row q-ma-xl justify-evenly no-wrap">
       <iframe
         class="col-3"
         v-for="video in 3"
@@ -551,69 +569,66 @@
         allowfullscreen
       ></iframe>
     </div>
-    <div class="col row items-center">
-      <q-separator class="col"></q-separator>
-      <q-btn class="col" label="ACESSE A PROGRAMAÇÃO COMPLETA"></q-btn>
-      <q-separator class="col"></q-separator>
+    <div class="col-1 row items-center">
+      <q-separator class="col" size="3px" color="black"></q-separator>
+      <q-btn outline class="col" label="ACESSE A PROGRAMAÇÃO COMPLETA"></q-btn>
+      <q-separator class="col" size="3px" color="black"></q-separator>
     </div>
   </q-page>
 
-  <q-page class="row bgpink">
+  <q-page class="row bgmagenta">
     <div class="col q-pa-xl column justify-center text-right">
       <p class="col-1 text-h4 no-padding no-margin yellow">
         EDIÇÕES ANTERIORES
       </p>
       <q-separator class="col-1 yellow" color="yellow" size="3px"></q-separator>
-      <p class="col-3 text-h1 q-pt-xl text-white">LABIC 2019</p>
-      <p class="col-3 text-h2 text-white">EDIÇÃO RIO</p>
+      <p class="col-3 text-h1 q-pt-xl yellow">LABIC 2019</p>
+      <p class="col-3 text-h2 yellow">EDIÇÃO RIO</p>
     </div>
     <div class="col-6 column no-wrap items-center">
-      <p class="col-10 text-h5 text-right q-pa-xl">
+      <p class="col-12 text-h5 text-left q-pa-xl text-white">
         2019 foi um ano intenso. Além da edição anual, realizamos outras duas
         edições do Labic em formato reduzido, duas visitas técnicas e um ciclo
-        de formação em análise de dados.<br /><br />
-        Uma das visitas foi ao Laboratório de Estudos sobre Imagem e
+        de formação em análise de dados.
+        <br />
+        <br />Uma das visitas foi ao Laboratório de Estudos sobre Imagem e
         Cibercultura (Labic) da Universidade Federal do Espírito Santo (UFES) é
         academicamente um dos expoentes brasileiros da Ciência de Dados, tendo
         se tornado, ao longo dos anos, um dos mais respeitados centros de
-        referência no assunto.<br /><br />
-        A segunda, foi à sexta edição do Simpósio Internacional LAVITS:
+        referência no assunto.
+        <br />
+        <br />A segunda, foi à sexta edição do Simpósio Internacional LAVITS:
         Assimetrias e (In)Visibilidades: Vigilância, Gênero e Raça, corrida em
         junho, na Universidade Federal da Bahia (UFBA). No evento, testamos a
         aplicação de uma metodologia de ativação de redes em curtíssimo tempo,
         mapeamos redes parceiras em outros estados, expandindo nossa incidência
         e relevância.
       </p>
-      <q-btn
-        id="rounder3"
-        class="text-white text-h6 col-1 text-center"
-        label="ACESSE AQUI O RELATÓRIO COMPLETO!"
-      ></q-btn>
     </div>
   </q-page>
 
-  <q-page class="row bgpink">
-    <div class="col-6 q-px-md column no-wrap">
-      <p class="col-10 text-h5 text-right q-pa-xl">
+  <q-page class="row bgmagenta">
+    <div class="col-6 column no-wrap">
+      <p class="col-10 q-px-md text-h5 text-right q-pa-xl text-white">
         Foram 25 projetos atendidos por 11 mentores e 5 conferencistas que
         abordaram temas como: redes e narrativas; aplicativos e tecnologias do
         comum, economia colaborativa, sustentabilidade, gestão e governança;
         articulação, mobilização, mídia e ativismo; produção audiovisual; dados
         e algoritmos; dados e narrativas; construção de narrativas para projetos
         e apresentações: ferramentas de gestão de projetos; além das mentorias
-        de redes sociais, design e construção de aplicativos. <br />
+        de redes sociais, design e construção de aplicativos.
         <br />
-        O Labic Ninja Lisboa aconteceu como integrate da programação da Casa
-        Ninja Lisboa em Portugal. Durante três dias, projetos lusitanos
+        <br />O Labic Ninja Lisboa aconteceu como integrate da programação da
+        Casa Ninja Lisboa em Portugal. Durante três dias, projetos lusitanos
         participaram de oficinas, palestras e mentorias intensas sobre
         desenvolvimento, elaboração de ações, prototipagem, pesquisa aplicada,
         sistematização, uso de tecnologias e ferramentas para gestão de redes,
         ativismo, mídia live etc.
       </p>
-      <p class="col-2 text-left">RIO 2019</p>
+      <p class="col-2 text-h2 q-pl-xl text-left yellow">RIO 2019</p>
     </div>
-    <div class="col-6 q-px-md column no-wrap">
-      <p class="col-12 text-h5 text-left q-pa-xl">
+    <div class="col-6 column no-wrap">
+      <p class="col-12 q-px-md text-h5 text-left q-pa-xl text-white">
         Nossa consagrada edição regular anual do Labic foi realizada de setembro
         a dezembro de 2019. Reuniu projetos, colaboradores e mentores às
         sextas-feiras, das 16h30 às 20h30, na Central de Produção Multimídia da
@@ -632,15 +647,9 @@
     </div>
   </q-page>
 
-  <q-page class="row bgpurple no-padding no-margin">
-    <q-img
-      id="tesst"
-      :ratio="16 / 9"
-      fit="fill"
-      class="col-6 q-mb-xl"
-      src="A07F64CF.png"
-    />
-    <div class="col-6 column bg-white q-mb-xl">
+  <q-page class="row bgyellow no-padding no-margin">
+    <q-img id="tesst" fit="fill" class="col-7 q-mb-xl" src="images/2019.jpg" />
+    <div class="col-5 column bg-white q-mb-xl">
       <div class="col-9 row">
         <div class="col-7 column justify-center">
           <div class="col row items-center">
@@ -656,82 +665,379 @@
             <span class="col text-h5 q-ml-md">mentores</span>
           </div>
         </div>
-        <div class="col-5 column items-center">
-          <q-spacer class="col"></q-spacer>
-          <span class="col-4 yellow ultralarge">26</span>
-          <span class="col-1 text-h5">projetos</span>
-          <q-spacer class="col"></q-spacer>
+        <div class="col-5 column items-center justify-center">
+          <span class="col-4 magenta ultralarge">26</span>
+          <span class="col-1 text-h5 q-py-md">projetos</span>
         </div>
       </div>
-      <div class="col-3 column bgmagenta text-center items-center">
-        <q-btn outline color="yellow" class="col q-ma-lg"
-          ><p class="text-white text-h6">
-            Confira a lista dos<br />Projetos Participantes
-          </p></q-btn
-        >
+      <div class="col-3 column bgpink text-center items-center">
+        <q-btn outline color="white" class="col q-ma-lg">
+          <p class="yellow text-h6">
+            Confira a lista dos
+            <br />Projetos Participantes
+          </p>
+        </q-btn>
       </div>
     </div>
   </q-page>
 
-  <q-page class="bgpurple row q-py-md">
-    <div class="col-5 column">
-      <q-icon color="primary" size="200px" class="col-6" name="smartphone" />
-      <q-icon color="primary" size="200px" class="col-6" name="smartphone" />
+  <q-page class="bgmagenta row">
+    <div class="col-5 column no-wrap">
+      <q-img
+        class="col-6 q-mb-sm"
+        src="images/27.9 primeiro encontro c colabs.jpg"
+        fit="fill"
+      />
+      <q-img
+        class="col-6"
+        fit="fill"
+        src="images/70817574_2523949274314774_1584828428119441408_n.jpg"
+      />
     </div>
-    <div class="col-7 column">
-      <div class="col-2">
-        <p class="text-h3 text-white">
-          PROGRAMAÇÃO <span class="yellow text-h1">|</span>
-          <span class="text-h2">LABIC RIO</span>
-          <span class="yellow text-h1">2019</span>
-        </p>
+    <div class="col-7 column no-wrap q-pl-sm">
+      <div class="col-2 self-center">
+        <span class="text-h3 text-white">
+          PROGRAMAÇÃO
+          <span class="yellow text-h1">|</span>
+          <span class="text-h3"> LABIC RIO</span>
+          <span class="yellow text-h2"> 2019</span>
+        </span>
       </div>
-      <q-icon
-        color="primary"
-        size="500px"
-        class="col-8 q-pa-xl"
-        name="smartphone"
+      <q-img
+        class="col-9 q-pa-xl"
+        src="images/74667953_2691170994259267_6604921933240729600_n.jpg"
       />
 
-      <div class="col-2">
-        <q-btn label="ACESSE A PROGRAMAÇÃO COMPLETA"></q-btn>
+      <div class="col-1 self-center q-pa-md">
+        <q-btn
+          unelevated
+          color="yellow"
+          class="text-black"
+          label="ACESSE A PROGRAMAÇÃO COMPLETA"
+        ></q-btn>
       </div>
     </div>
   </q-page>
 
-  <q-page class="row bgpink">
-    <div class="col-6 column no-wrap items-center">
-      <p class="col-10 text-h5 text-right q-pa-xl">
-        2019 foi um ano intenso. Além da edição anual, realizamos outras duas
-        edições do Labic em formato reduzido, duas visitas técnicas e um ciclo
-        de formação em análise de dados.<br /><br />
-        Uma das visitas foi ao Laboratório de Estudos sobre Imagem e
-        Cibercultura (Labic) da Universidade Federal do Espírito Santo (UFES) é
-        academicamente um dos expoentes brasileiros da Ciência de Dados, tendo
-        se tornado, ao longo dos anos, um dos mais respeitados centros de
-        referência no assunto.<br /><br />
-        A segunda, foi à sexta edição do Simpósio Internacional LAVITS:
-        Assimetrias e (In)Visibilidades: Vigilância, Gênero e Raça, corrida em
-        junho, na Universidade Federal da Bahia (UFBA). No evento, testamos a
-        aplicação de uma metodologia de ativação de redes em curtíssimo tempo,
-        mapeamos redes parceiras em outros estados, expandindo nossa incidência
-        e relevância.
+  <q-page class="row">
+    <div class="col-6 column no-wrap items-center bgyellow">
+      <p class="col-12 text-h5 text-right q-pa-xl">
+        Nosso ciclo formativo em fluxo seguiu para a cidade de Salvador (BA)
+        durante o Simpósio Internacional LAVITS: Assimetrias e
+        (In)Visibilidades: Vigilância, Gênero e Raça, ocorrido em junho, na
+        Universidade Federal da Bahia (UFBA). No evento, testamos a aplicação de
+        uma metodologia de ativação de redes em curtíssimo tempo, mapeamos redes
+        parceiras em outros estados, expandindo nossa incidência e relevância.
+        Foram 25 projetos atendidos por 11 mentores e 5 conferencistas que
+        abordaram temas como: redes e narrativas; aplicativos e tecnologias do
+        comm, economia colaborativa, sustentabilidade, gestão e governança;
+        articulação, mobilização, mídia e ativismo; produção audiovisual; dados
+        e algorítimos; dados e narrativas; construção de narrativas para
+        projetos e apresentações; ferramentas de gestão de projetos; além das
+        mentorias de redes sociais, design e construção de aplicativos.
       </p>
-      <q-btn
-        id="rounder3"
-        class="text-white text-h6 col-1 text-center"
-        label="ACESSE AQUI O RELATÓRIO COMPLETO!"
-      ></q-btn>
     </div>
-    <div class="col q-pa-xl column justify-center text-right">
+    <div class="col q-pa-xl column bgpink justify-center text-left">
       <p class="col-1 text-h4 no-padding no-margin yellow">
         EDIÇÕES ANTERIORES
       </p>
       <q-separator class="col-1 yellow" color="yellow" size="3px"></q-separator>
       <p class="col-3 text-h1 q-pt-xl text-white">LABIC 2019</p>
-      <p class="col-3 text-h2 text-white">EDIÇÃO RIO</p>
+      <p class="col-3 text-h2 text-white">EDIÇÃO BAHIA</p>
     </div>
   </q-page>
+
+    <q-page class="row bgmagenta no-padding no-margin">
+    <div class="col-6 column bg-white q-mb-xl">
+      <div class="col-9 row q-mx-xl">
+        <div class="col-8 column justify-evenly">
+          <div class="col-6 row items-end">
+            <span class="col ultralarge yellow text-right">11</span>
+            <span class="col text-h5 q-my-lg"> mentorias</span>
+          </div>
+          <div class="col-6 row items-end">
+            <span class="col ultralarge yellow text-right">5</span>
+            <span class="col text-h5  q-my-lg">conferencistas</span>
+          </div>
+        </div>
+        <div class="col-4 column items-center justify-center">
+          <span class="col-4 magenta ultralarge">25</span>
+          <span class="col-1 text-h5 q-py-md">projetos</span>
+        </div>
+      </div>
+      <div class="col-3 column bgpink text-center items-center">
+        <q-btn style="border: 3px solid rgb(255, 212, 51)" class="col q-ma-lg">
+          <p class="text-white text-h5">
+            Confira a lista dos
+            <br />Projetos Participantes
+          </p>
+        </q-btn>
+      </div>
+    </div>
+    <q-img
+      id="tesst"
+      fit="cover"
+      class="col-6 q-mb-xl"
+      src="images/BA 2019.png"
+    />
+  </q-page>
+
+    <q-page class="bgmagenta row">
+    <div class="col-5 column no-wrap">
+      <q-img
+        class="col-6 q-mb-sm"
+        src="images/pense-em-libras-min-1024x560.png"
+        fit="fill"
+      />
+      <q-img
+        class="col-6"
+        fit="fill"
+        src="images/iami-agbá-min-1024x559.png"
+      />
+    </div>
+    <div class="col-7 column no-wrap q-pl-sm">
+      <div class="col-2 self-center">
+        <span class="text-h3 text-white">
+          PROGRAMAÇÃO
+          <span class="text-h1">|</span>
+          <span class="text-h3"> LABIC BAHIA</span>
+          <span class="yellow text-h2"> 2019</span>
+        </span>
+      </div>
+      <q-img
+        class="col-9 "
+        src="images/femini-2-min-1024x576.png"
+        fit='fill'
+      />
+
+      <div class="col-1 self-center q-pa-md">
+        <q-btn
+          unelevated
+          color="yellow"
+          class="text-black"
+          label="ACESSE A PROGRAMAÇÃO COMPLETA"
+        ></q-btn>
+      </div>
+    </div>
+  </q-page>
+
+    <q-page class="row bgpink">
+    <div class="col q-pa-xl column justify-center text-right">
+      <p class="col-1 text-h4 no-padding no-margin yellow">
+        EDIÇÕES ANTERIORES
+      </p>
+      <q-separator class="col-1 yellow" color="yellow" size="3px"></q-separator>
+      <p class="col-3 text-h1 q-pt-xl text-white">LABIC 2018</p>
+    </div>
+    <div class="col-6 row justify-center items-center q-pa-xl">
+      <p class="col text-h5 text-left text-black ">
+        Em 2018, o Labic foi desafiado a alcançar voos mais
+amplos. Com apoio da UFRJ, renovamos e consolidamos
+o projeto e de suas atividades, que já eram referência
+em cultura digital e ambient cognitivo de diversidade,
+produção e partilha de saberes e cosmovisões plurais. A
+segunda edição do Labic reuniu lideranças e gestores de
+projetos, pesquisadores, mentores e colaboradores
+entre os meses de setembro e dezembro de 2018 no Rio
+de Janeiro, conectando pessoas interessadas no
+intercâmbio de ideas de práticas pioneiras e inovadoras
+da economia criativa. Vinte projetos participaram dessa
+edição e tiveram a oportunidade de desenvolver suas
+propostas, compartilhar experiências, mapear as
+melhorias necessárias e planejar seus próximos passos.
+Para isso, 58 colaboradores se uniram as projetos,
+contribuindo para seu desenvolvimento e
+sustentabilidade em rede.
+      </p>
+    </div>
+  </q-page>
+
+    <q-page class="row bgmagenta">
+          <q-img
+      id="tesst"
+      fit="cover"
+      class="col-6 q-mb-xl"
+      src="images/2018.jpg"
+    />
+    <div class="col-6 column bg-white q-mb-xl">
+      <div class="col-9 row q-mx-md">
+        <div class="col-9 column justify-evenly">
+          <div class="col-6 row items-end">
+            <span class="col ultralarge2 magenta text-right">10</span>
+            <span class="col text-h5 q-my-lg"> encontros</span>
+          </div>
+          <div class="col-6 row items-end">
+            <span class="col ultralarge2 magenta text-left">100</span>
+            <span class="col text-h5  q-my-lg">participantes</span>
+          </div>
+        </div>
+        <div class="col-3 column items-center justify-center">
+          <span class="col-4 pink ultralarge2">20</span>
+          <span class="col-1 text-h5 q-py-md">projetos</span>
+        </div>
+      </div>
+      <div class="col-3 column bgyellow text-center items-center">
+        <q-btn  style="border: 3px solid #df71ff" class="col q-ma-lg">
+          <p class="text-black text-h5">
+            Confira a lista dos
+            <br />Projetos Participantes
+          </p>
+        </q-btn>
+      </div>
+    </div>
+
+  </q-page>
+
+      <q-page class="bgpink row">
+    <div class="col-5 column no-wrap">
+      <img
+        class="col-6 q-mb-sm"
+        src="images/26.jpg"
+        fit="fill"
+      />
+      <img
+        class="col-6"
+        fit="fill"
+        src="images/45687332_2023787100997663_8309980793921339392_n.jpg"
+      />
+    </div>
+    <div class="col-7 column no-wrap q-pl-sm">
+      <div class="col-2 self-center row items-center">
+        <span class="text-h3  col text-white">
+          PROGRAMAÇÃO
+          <span class="text-h3 col  yellow">----</span>
+          <span class="text-h3 col "> LABIC 2018</span>
+        </span>
+      </div>
+      <img
+        class="col-8 "
+        src="images/42730788_2082385008461525_2027607868068331520_n.jpg"
+        fit='fill'
+      />
+
+      <div class="col-2 self-center q-pa-md">
+        <q-btn
+          unelevated
+          color="yellow"
+          class="text-black"
+          label="ACESSE A PROGRAMAÇÃO COMPLETA"
+        ></q-btn>
+      </div>
+    </div>
+  </q-page>
+
+
+    <q-page class="row ">
+    <div class="col q-pa-xl bgyellow column justify-center text-right">
+      <p class="col-1 text-h4 no-padding no-margin magenta">
+        EDIÇÕES ANTERIORES
+      </p>
+      <q-separator class="col-1 yellow bgmagenta" size="3px"></q-separator>
+      <p class="col-3 text-h1 q-pt-xl magenta">LABIC 2017</p>
+    </div>
+    <div class="col-6 row justify-center bgmagenta items-center q-pa-xl">
+      <p class="col text-h5 text-left text-white ">
+        O Labic foi implementado na Escola de
+Comunicação da UFRJ em 2017. O laboratório
+incidiu em toda a Região Metropolitana
+fluminense. Teve Labic no Pontão
+da ECO, na Central de Produção Multimídia da
+ECO, no Território Inventivo (Centro), na
+Comunidade da Maré/Redes da Maré, na Rede
+BOTAFOGO Solidária e na ANF -Agência de
+Notícias da Favela. Além desses projetos e
+iniciativas que viraram parceiros, o Labic contou
+com a colaboração da Mídia Ninja, do Circuito
+Fora do Eixo, da Companhia Teatral Língua de
+Trapo, da Encantamento Filmes e do Projeto
+Visionárias. Na primeira edição, o Labic realizou
+13 encontros, aos sábados, das 14h às 18h. Para
+atender 27 projetos, captou 50 colaboradores
+voluntários, mentores e conferencistas,
+envolvendo diretamente 150 pessoas.
+      </p>
+    </div>
+  </q-page>
+
+  <q-page class="row bgpink no-padding no-margin">
+
+    <div class="col-6 column bg-white q-mb-xl">
+      <div class="col-9 row">
+        <div class="col-7 column justify-center">
+          <div class="col row items-center">
+            <span class="col text-h1 yellow text-right">150</span>
+            <span class="col text-h5 q-ml-md">pessoas</span>
+          </div>
+          <div class="col row items-center">
+            <span class="col text-h1 yellow text-right">50</span>
+            <span class="col text-h5 q-ml-md">colaboradores</span>
+          </div>
+          <div class="col row items-center">
+            <span class="col text-h1 yellow text-right">13</span>
+            <span class="col text-h5 q-ml-md">encontros</span>
+          </div>
+        </div>
+        <div class="col-5 column items-center justify-center">
+          <span class="col-4 pink ultralarge">27</span>
+          <span class="col-1 text-h5 q-py-md">projetos</span>
+        </div>
+      </div>
+      <div class="col-3 column bgmagenta text-center items-center">
+        <q-btn outline style="color: rgb(255, 212, 51)" class="col q-ma-lg">
+          <p class="text-white text-h6">
+            Confira a lista dos
+            <br />Projetos Participantes
+          </p>
+        </q-btn>
+      </div>
+    </div>
+        <q-img
+      id="tesst"
+      :ratio="16 / 9"
+      fit="fill"
+      class="col-6 q-mb-xl"
+      src="images/Screen Shot 2022-02-15 at 11.19.47.png"
+    />
+  </q-page>
+
+      <q-page class="bgyellow row">
+    <div class="col-5 column no-wrap">
+      <img
+        class="col-6 q-mb-sm"
+        src="images/22904764_1583326375043740_1146566215308148923_o.jpg"
+        fit="fill"
+      />
+      <img
+        class="col-6"
+        fit="fill"
+        src="images/9.jpg"
+      />
+    </div>
+    <div class="col-7 column no-wrap q-pl-sm">
+      <div class="col-2 self-center row items-center">
+        <span class="text-h3  col text-white">
+          PROGRAMAÇÃO
+          <span class="text-h3 col  magenta">----</span>
+          <span class="text-h3 col "> LABIC 2017</span>
+        </span>
+      </div>
+      <img
+        class="col-8 "
+        src="images/22861451_1583328818376829_8855819429735089998_o (1).jpg"
+        fit='fill'
+      />
+
+      <div class="col-2 self-center q-pa-md">
+        <q-btn
+          unelevated
+          class="text-white bgmagenta"
+          label="ACESSE A PROGRAMAÇÃO COMPLETA"
+        ></q-btn>
+      </div>
+    </div>
+  </q-page>
+
+
 </template>
 
 <script>
@@ -935,6 +1241,11 @@ export default defineComponent({
 
 .ultralarge {
   font-size: 12rem;
+  line-height: 1;
+}
+
+.ultralarge2 {
+  font-size: 10rem;
   line-height: 1;
 }
 </style>
