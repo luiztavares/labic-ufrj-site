@@ -1,6 +1,8 @@
 import { route } from 'quasar/wrappers'
 import { createRouter, createMemoryHistory, createWebHistory, createWebHashHistory } from 'vue-router'
 import routes from './routes'
+import VueScrollTo from 'vue-scrollto';
+
 
 /*
  * If not building with SSR mode, you can
@@ -17,7 +19,16 @@ export default route(function (/* { store, ssrContext } */) {
     : (process.env.VUE_ROUTER_MODE === 'history' ? createWebHistory : createWebHashHistory)
 
   const Router = createRouter({
-    scrollBehavior: () => ({ left: 0, top: 0 }),
+    scrollBehavior (to, from, savedPosition) {
+      if (to.hash) {
+        return window.scrollTo({
+          top: document.querySelector(to.hash).offsetTop - 100,
+          behavior: 'smooth'
+        })
+      } else {
+        return { x: 0, y: 0 }
+      }
+    },
     routes,
 
     // Leave this as is and make changes in quasar.conf.js instead!

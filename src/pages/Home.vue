@@ -1,5 +1,5 @@
 <template>
-  <q-page class="hero">
+  <q-page id="home" class="hero">
     <q-carousel
       v-model="slide"
       transition-prev="scale"
@@ -43,7 +43,7 @@
     </q-carousel>
   </q-page>
 
-  <q-page class="row">
+  <q-page id="oprojeto" class="row">
     <div class="projeto-left q-pa-xl col-5 text-right column justify-center">
       <div class="projeto-header col-auto">
         <p class="align-center no-padding no-margin text-no-wrap">O PROJETO</p>
@@ -168,7 +168,7 @@
     </div>
   </q-page>
 
-  <q-page class="hero row q-pa-xl">
+  <q-page id="inscricoes" class="hero row q-pa-xl">
     <div id="aovivo" class="vertical-text col-1 q-mx-sm">
       <p class="color-primary text-uppercase">Inscrições</p>
     </div>
@@ -192,7 +192,7 @@
     </div>
   </q-page>
 
-  <q-page class="column q-pa-md">
+  <q-page id="acoesparticipantes" class="column q-pa-md">
     <h1 class="text-h1 col-2 underlined" style="color: #a0d628">
       Ações Participantes
     </h1>
@@ -215,7 +215,7 @@
     <div class="col-4"></div>
   </q-page>
 
-  <q-page class="row">
+  <q-page id="programacao" class="row">
     <div
       class="col-1 vertical-text bgpink text-white text-h2 items-center justify-center flex"
     >
@@ -250,11 +250,23 @@
       >
         ÚLTIMAS MENTORIAS
       </div>
-      <div class="col-10 bgpurple"></div>
+      <div class="row col-10 bgpurple">
+        <div
+          class="col-6 q-video q-pa-md"
+          v-for="ultimaMentoria in ultimasMentorias"
+          :key="ultimaMentoria"
+        >
+          <iframe
+            :src="ultimaMentoria"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </div>
   </q-page>
 
-  <q-page class="row bgpink">
+  <q-page id="edicoesanteriores" class="row bgpink">
     <div class="col-6 column no-wrap items-center">
       <p class="col-10 text-h5 text-right q-pa-xl">
         Após 5 anos, 7 edições e mais de 180 projetos atendidos, o Laboratório
@@ -747,7 +759,7 @@
     </div>
   </q-page>
 
-    <q-page class="row bgmagenta no-padding no-margin">
+  <q-page class="row bgmagenta no-padding no-margin">
     <div class="col-6 column bg-white q-mb-xl">
       <div class="col-9 row q-mx-xl">
         <div class="col-8 column justify-evenly">
@@ -757,7 +769,7 @@
           </div>
           <div class="col-6 row items-end">
             <span class="col ultralarge yellow text-right">5</span>
-            <span class="col text-h5  q-my-lg">conferencistas</span>
+            <span class="col text-h5 q-my-lg">conferencistas</span>
           </div>
         </div>
         <div class="col-4 column items-center justify-center">
@@ -782,18 +794,14 @@
     />
   </q-page>
 
-    <q-page class="bgmagenta row">
+  <q-page class="bgmagenta row">
     <div class="col-5 column no-wrap">
       <q-img
         class="col-6 q-mb-sm"
         src="images/pense-em-libras-min-1024x560.png"
         fit="fill"
       />
-      <q-img
-        class="col-6"
-        fit="fill"
-        src="images/iami-agbá-min-1024x559.png"
-      />
+      <q-img class="col-6" fit="fill" src="images/iami-agbá-min-1024x559.png" />
     </div>
     <div class="col-7 column no-wrap q-pl-sm">
       <div class="col-2 self-center">
@@ -804,11 +812,7 @@
           <span class="yellow text-h2"> 2019</span>
         </span>
       </div>
-      <q-img
-        class="col-9 "
-        src="images/femini-2-min-1024x576.png"
-        fit='fill'
-      />
+      <q-img class="col-9" src="images/femini-2-min-1024x576.png" fit="fill" />
 
       <div class="col-1 self-center q-pa-md">
         <q-btn
@@ -821,7 +825,7 @@
     </div>
   </q-page>
 
-    <q-page class="row bgpink">
+  <q-page class="row bgpink">
     <div class="col q-pa-xl column justify-center text-right">
       <p class="col-1 text-h4 no-padding no-margin yellow">
         EDIÇÕES ANTERIORES
@@ -830,35 +834,26 @@
       <p class="col-3 text-h1 q-pt-xl text-white">LABIC 2018</p>
     </div>
     <div class="col-6 row justify-center items-center q-pa-xl">
-      <p class="col text-h5 text-left text-black ">
-        Em 2018, o Labic foi desafiado a alcançar voos mais
-amplos. Com apoio da UFRJ, renovamos e consolidamos
-o projeto e de suas atividades, que já eram referência
-em cultura digital e ambient cognitivo de diversidade,
-produção e partilha de saberes e cosmovisões plurais. A
-segunda edição do Labic reuniu lideranças e gestores de
-projetos, pesquisadores, mentores e colaboradores
-entre os meses de setembro e dezembro de 2018 no Rio
-de Janeiro, conectando pessoas interessadas no
-intercâmbio de ideas de práticas pioneiras e inovadoras
-da economia criativa. Vinte projetos participaram dessa
-edição e tiveram a oportunidade de desenvolver suas
-propostas, compartilhar experiências, mapear as
-melhorias necessárias e planejar seus próximos passos.
-Para isso, 58 colaboradores se uniram as projetos,
-contribuindo para seu desenvolvimento e
-sustentabilidade em rede.
+      <p class="col text-h5 text-left text-black">
+        Em 2018, o Labic foi desafiado a alcançar voos mais amplos. Com apoio da
+        UFRJ, renovamos e consolidamos o projeto e de suas atividades, que já
+        eram referência em cultura digital e ambient cognitivo de diversidade,
+        produção e partilha de saberes e cosmovisões plurais. A segunda edição
+        do Labic reuniu lideranças e gestores de projetos, pesquisadores,
+        mentores e colaboradores entre os meses de setembro e dezembro de 2018
+        no Rio de Janeiro, conectando pessoas interessadas no intercâmbio de
+        ideas de práticas pioneiras e inovadoras da economia criativa. Vinte
+        projetos participaram dessa edição e tiveram a oportunidade de
+        desenvolver suas propostas, compartilhar experiências, mapear as
+        melhorias necessárias e planejar seus próximos passos. Para isso, 58
+        colaboradores se uniram as projetos, contribuindo para seu
+        desenvolvimento e sustentabilidade em rede.
       </p>
     </div>
   </q-page>
 
-    <q-page class="row bgmagenta">
-          <q-img
-      id="tesst"
-      fit="cover"
-      class="col-6 q-mb-xl"
-      src="images/2018.jpg"
-    />
+  <q-page class="row bgmagenta">
+    <q-img id="tesst" fit="cover" class="col-6 q-mb-xl" src="images/2018.jpg" />
     <div class="col-6 column bg-white q-mb-xl">
       <div class="col-9 row q-mx-md">
         <div class="col-9 column justify-evenly">
@@ -868,7 +863,7 @@ sustentabilidade em rede.
           </div>
           <div class="col-6 row items-end">
             <span class="col ultralarge2 magenta text-left">100</span>
-            <span class="col text-h5  q-my-lg">participantes</span>
+            <span class="col text-h5 q-my-lg">participantes</span>
           </div>
         </div>
         <div class="col-3 column items-center justify-center">
@@ -877,7 +872,7 @@ sustentabilidade em rede.
         </div>
       </div>
       <div class="col-3 column bgyellow text-center items-center">
-        <q-btn  style="border: 3px solid #df71ff" class="col q-ma-lg">
+        <q-btn style="border: 3px solid #df71ff" class="col q-ma-lg">
           <p class="text-black text-h5">
             Confira a lista dos
             <br />Projetos Participantes
@@ -885,16 +880,11 @@ sustentabilidade em rede.
         </q-btn>
       </div>
     </div>
-
   </q-page>
 
-      <q-page class="bgpink row">
+  <q-page class="bgpink row">
     <div class="col-5 column no-wrap">
-      <img
-        class="col-6 q-mb-sm"
-        src="images/26.jpg"
-        fit="fill"
-      />
+      <img class="col-6 q-mb-sm" src="images/26.jpg" fit="fill" />
       <img
         class="col-6"
         fit="fill"
@@ -903,16 +893,16 @@ sustentabilidade em rede.
     </div>
     <div class="col-7 column no-wrap q-pl-sm">
       <div class="col-2 self-center row items-center">
-        <span class="text-h3  col text-white">
+        <span class="text-h3 col text-white">
           PROGRAMAÇÃO
-          <span class="text-h3 col  yellow">----</span>
-          <span class="text-h3 col "> LABIC 2018</span>
+          <span class="text-h3 col yellow">----</span>
+          <span class="text-h3 col"> LABIC 2018</span>
         </span>
       </div>
       <img
-        class="col-8 "
+        class="col-8"
         src="images/42730788_2082385008461525_2027607868068331520_n.jpg"
-        fit='fill'
+        fit="fill"
       />
 
       <div class="col-2 self-center q-pa-md">
@@ -926,8 +916,7 @@ sustentabilidade em rede.
     </div>
   </q-page>
 
-
-    <q-page class="row ">
+  <q-page class="row">
     <div class="col q-pa-xl bgyellow column justify-center text-right">
       <p class="col-1 text-h4 no-padding no-margin magenta">
         EDIÇÕES ANTERIORES
@@ -936,31 +925,24 @@ sustentabilidade em rede.
       <p class="col-3 text-h1 q-pt-xl magenta">LABIC 2017</p>
     </div>
     <div class="col-6 row justify-center bgmagenta items-center q-pa-xl">
-      <p class="col text-h5 text-left text-white ">
-        O Labic foi implementado na Escola de
-Comunicação da UFRJ em 2017. O laboratório
-incidiu em toda a Região Metropolitana
-fluminense. Teve Labic no Pontão
-da ECO, na Central de Produção Multimídia da
-ECO, no Território Inventivo (Centro), na
-Comunidade da Maré/Redes da Maré, na Rede
-BOTAFOGO Solidária e na ANF -Agência de
-Notícias da Favela. Além desses projetos e
-iniciativas que viraram parceiros, o Labic contou
-com a colaboração da Mídia Ninja, do Circuito
-Fora do Eixo, da Companhia Teatral Língua de
-Trapo, da Encantamento Filmes e do Projeto
-Visionárias. Na primeira edição, o Labic realizou
-13 encontros, aos sábados, das 14h às 18h. Para
-atender 27 projetos, captou 50 colaboradores
-voluntários, mentores e conferencistas,
-envolvendo diretamente 150 pessoas.
+      <p class="col text-h5 text-left text-white">
+        O Labic foi implementado na Escola de Comunicação da UFRJ em 2017. O
+        laboratório incidiu em toda a Região Metropolitana fluminense. Teve
+        Labic no Pontão da ECO, na Central de Produção Multimídia da ECO, no
+        Território Inventivo (Centro), na Comunidade da Maré/Redes da Maré, na
+        Rede BOTAFOGO Solidária e na ANF -Agência de Notícias da Favela. Além
+        desses projetos e iniciativas que viraram parceiros, o Labic contou com
+        a colaboração da Mídia Ninja, do Circuito Fora do Eixo, da Companhia
+        Teatral Língua de Trapo, da Encantamento Filmes e do Projeto
+        Visionárias. Na primeira edição, o Labic realizou 13 encontros, aos
+        sábados, das 14h às 18h. Para atender 27 projetos, captou 50
+        colaboradores voluntários, mentores e conferencistas, envolvendo
+        diretamente 150 pessoas.
       </p>
     </div>
   </q-page>
 
   <q-page class="row bgpink no-padding no-margin">
-
     <div class="col-6 column bg-white q-mb-xl">
       <div class="col-9 row">
         <div class="col-7 column justify-center">
@@ -991,7 +973,7 @@ envolvendo diretamente 150 pessoas.
         </q-btn>
       </div>
     </div>
-        <q-img
+    <q-img
       id="tesst"
       :ratio="16 / 9"
       fit="fill"
@@ -1000,31 +982,27 @@ envolvendo diretamente 150 pessoas.
     />
   </q-page>
 
-      <q-page class="bgyellow row">
+  <q-page class="bgyellow row">
     <div class="col-5 column no-wrap">
       <img
         class="col-6 q-mb-sm"
         src="images/22904764_1583326375043740_1146566215308148923_o.jpg"
         fit="fill"
       />
-      <img
-        class="col-6"
-        fit="fill"
-        src="images/9.jpg"
-      />
+      <img class="col-6" fit="fill" src="images/9.jpg" />
     </div>
     <div class="col-7 column no-wrap q-pl-sm">
       <div class="col-2 self-center row items-center">
-        <span class="text-h3  col text-white">
+        <span class="text-h3 col text-white">
           PROGRAMAÇÃO
-          <span class="text-h3 col  magenta">----</span>
-          <span class="text-h3 col "> LABIC 2017</span>
+          <span class="text-h3 col magenta">----</span>
+          <span class="text-h3 col"> LABIC 2017</span>
         </span>
       </div>
       <img
-        class="col-8 "
+        class="col-8"
         src="images/22861451_1583328818376829_8855819429735089998_o (1).jpg"
-        fit='fill'
+        fit="fill"
       />
 
       <div class="col-2 self-center q-pa-md">
@@ -1037,7 +1015,107 @@ envolvendo diretamente 150 pessoas.
     </div>
   </q-page>
 
+  <q-page id="mentores" class="row bgpurple">
+    <div class="col column justify-center text-right q-px-xl">
+      <div>
+        <span class="text-h2 yellow">MENTORES E COLABORADORES</span>
+        <q-separator class="q-mb-md q-mt-sm bgyellow" size="5px"></q-separator>
+        <span class="color-primary text-h5"
+          >MENTORES, COLABORADORES E EXTENSIONISTAS SÃO DE FUNDAMENTAL
+          IMPORTÂNCIA NO DESENVOLVIMENTO DOS PROJETOS. CONHECA O QUE ELES
+          FAZEM!</span
+        >
+      </div>
+    </div>
+    <div class="col column justify-center text-left q-px-xl">
+      <div>
+        <p class="text-h3 yellow">Mentores</p>
+        <p class="text-white text-h5">
+          São pensadores, gestores, ativistas, empreendedores, estudantes,
+          professors, produtores, desenvolvedores, comunicadores e investidores
+          que apresentam diagnósticos, propostas e ações inovadoras para os
+          projetos.
+        </p>
+      </div>
+      <div>
+        <p class="text-h3 yellow">Colaboradores</p>
+        <p class="text-white text-h5">
+          Os colaboradores participam das equipes dos projetos selecionados e da
+          equipe de organização do Laboratório de Inovação Cidadà para
+          desenvolvimento, prototipagem, pesquisa aplicada, sistematização, uso
+          de tecnologias e ferramentas e documentação de processos ao longo do
+          laboratório.
+        </p>
+      </div>
+    </div>
 
+    <div class="col column justify-center text-left q-px-xl">
+      <div>
+        <q-icon name="img:Asset 2.svg" size="300px" />
+      </div>
+      <div class="q-pt-xl">
+        <p class="text-h3 yellow">Extensionistas</p>
+        <p class="text-white text-h5">
+          Extensionista é o aluno da UFRJ que foi selecionado através de chamada
+          específica para desenvolver atividades com a comunidade externa
+          utilizando o conhecimento adquirido na universidade e participando
+          ativamente das ações do Labic. Participa como extensionista e é
+          creditado com horas de extensàc que são lançadas no seu BOA.
+        </p>
+      </div>
+    </div>
+  </q-page>
+
+  <q-page class="bgyellow">
+    <div class="">
+      <p class="q-pt-xl q-pl-xl text-h3 pink">
+        CONHEÇA ALGUNS DE NOSSOS PARCEIROS
+      </p>
+      <q-separator class="bgpink q-mr-xl" size="5px"></q-separator>
+    </div>
+    <q-virtual-scroll
+      class="q-pa-xl"
+      :items="mentores"
+      virtual-scroll-horizontal
+    >
+      <template v-slot="{ item, index }">
+        <q-card class="q-ma-xl">
+          <q-img
+            class="q-ma-md"
+            src="https://cdn.quasar.dev/img/mountains.jpg"
+          />
+
+          <q-card-section>
+            <div class="text-h6">{{ item.nome }}</div>
+            <div class="text-subtitle2">by John Doe</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none">
+            {{ item + index }}
+          </q-card-section>
+        </q-card>
+      </template>
+    </q-virtual-scroll>
+  </q-page>
+
+  <q-page id='materiais' class="bg-white row">
+    <div class="col-1 ">
+      <div id="vertical" class="vertical-text col-8">
+        <p class="text-black text-uppercase">Materiais</p>
+      </div>
+
+    </div>
+
+    <div class="col-9 column  justify-center ">
+      <p class="col-2 magenta   q-mt-xl q-mx-xl text-h4 text-uppercase">baixe aqui nossas cartilhas apresentadas pela nossa equipe</p>
+      <div class="col-8 q-px-xl">
+        <q-btn color="teal" rounded class="q-mx-md q-my-sm"  v-for="material in materiais" :key="material" :label='material' size="xl"></q-btn>
+      </div>
+    </div>
+    <div class="col-2">
+      <q-icon name='star' class="full-width full-height" color="primary" size="300px"></q-icon>
+    </div>
+  </q-page>
 </template>
 
 <script>
@@ -1048,6 +1126,43 @@ export default defineComponent({
   name: "PageIndex",
   data: function () {
     return {
+      materiais : [
+        'Como construir mapas de narrativas',
+        'Modelos de Mapa',
+        'Guia para cada grupo baixar e construir a sua narrativa',
+        'Gestão e Marketing',
+        'Novas Economias: Banco Palma',
+        'Fundo Rotativo Solidário do Fórum de Cooperativismo Popular'
+      ],
+
+      mentores: [
+        { imagem: "", nome: "THIAGO VINÍCIUS,", descricao: "", video: null },
+        { imagem: "", nome: "DRÍADE AGUIAR", descricao: "", video: null },
+        { imagem: "", nome: "PRETO ZEZÉ", descricao: "", video: null },
+        { imagem: "", nome: "RAUL SANTIAGO", descricao: "", video: null },
+        { imagem: "", nome: "RENE SILVA", descricao: "", video: null },
+        { imagem: "", nome: "MARCUS FAUSTINI", descricao: "", video: null },
+        { imagem: "", nome: "JOAQUIM MELO,", descricao: "", video: null },
+        { imagem: "", nome: "FÁVIA MACÊDO", descricao: "", video: null },
+        { imagem: "", nome: "FELIPE ALTENFELDER,", descricao: "", video: null },
+        { imagem: "", nome: "THIAGO SCHERER,", descricao: "", video: null },
+        { imagem: "", nome: "DANIELE MOURA", descricao: "", video: null },
+        { imagem: "", nome: "FELIPE CARUSO", descricao: "", video: null },
+        { imagem: "", nome: "BRUNO F. DUARTE,", descricao: "", video: null },
+        { imagem: "", nome: "OTÁVIO RIBEIRO,", descricao: "", video: null },
+        { imagem: "", nome: "AYRA CONSULTORIA", descricao: "", video: null },
+        { imagem: "", nome: "OLIVER KORNBLIHTT", descricao: "", video: null },
+        { imagem: "", nome: "ADRIANO BELISÁRIO", descricao: "", video: null },
+        { imagem: "", nome: "RAÍSA GALVÃO", descricao: "", video: null },
+        { imagem: "", nome: "LORI REGATTIERI", descricao: "", video: null },
+      ],
+      slide: ref("style"),
+      ultimasMentorias: [
+        "https://www.youtube.com/embed/XDmN6eIxOOw",
+        "https://www.youtube.com/embed/BDSdW6HjFSA",
+        "https://www.youtube.com/embed/q5FX5_kescM",
+        "https://www.youtube.com/embed/NZppOfA6KWk",
+      ],
       eixos: [
         {
           icon: "smartphone",
@@ -1087,14 +1202,6 @@ export default defineComponent({
       ],
     };
   },
-
-  setup() {
-    return {
-      slide: ref("style"),
-      lorem:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo.",
-    };
-  },
 });
 </script>
 
@@ -1116,6 +1223,13 @@ export default defineComponent({
 }
 
 #aovivo p {
+  font-size: 5vw;
+}
+
+#vertical {
+  height: 49.8vw;
+  max-height: 80.8vh;
+  border-left: 3px solid black;
   font-size: 5vw;
 }
 
