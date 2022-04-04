@@ -1154,7 +1154,7 @@ export default defineComponent({
         { imagem: "", nome: "OLIVER KORNBLIHTT", descricao: "", video: null },
         { imagem: "", nome: "ADRIANO BELISÁRIO", descricao: "", video: null },
         { imagem: "", nome: "RAÍSA GALVÃO", descricao: "", video: null },
-        { imagem: "", nome: "LORI REGATTIERI", descricao: "", video: null },
+        { imagem: "", nome: "LORI REGATTIERI,", descricao: "", video: null },
       ],
       slide: ref("style"),
       ultimasMentorias: [
