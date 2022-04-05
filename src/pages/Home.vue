@@ -288,6 +288,8 @@
         id="rounder2"
         class="text-white text-h6 col-1 text-center"
         label="CONFIRA!"
+        target = '_blank'
+        href = 'https://drive.google.com/file/d/1eLt25u7MLNrzVXOVvzutljgwlSE45-_I/view'
       ></q-btn>
     </div>
     <div class="col q-pa-xl column justify-center">
@@ -312,7 +314,7 @@
         <span class="text-h5 q-ml-md">encontros</span>
       </div>
       <div class="col-3 column bgpink text-center items-center">
-        <q-btn outline color="yellow" class="col q-ma-lg">
+        <q-btn outline color="yellow" class="col q-ma-lg" href = 'https://drive.google.com/file/d/1yT6lf60wwKfLnav7fg6ivNOl5730av6j/view' target="_blank">
           <p class="text-white text-h6">
             Confira a lista dos
             <br />Projetos Participantes
@@ -364,7 +366,7 @@
     </div>
     <div class="col-1 row items-center">
       <q-separator class="col" size="3px" color="black"></q-separator>
-      <q-btn outline class="col" label="ACESSE A PROGRAMAÇÃO COMPLETA"></q-btn>
+      <q-btn outline class="col" label="ACESSE A PROGRAMAÇÃO COMPLETA" href = 'https://www.youtube.com/watch?v=_chmTnA--9I&list=PLT6dlUCLrobCp3l27rvAvD3C7gqkvMOH6' target='_blank'></q-btn>
       <q-separator class="col" size="3px" color="black"></q-separator>
     </div>
   </q-page>
@@ -431,11 +433,17 @@
           <span class="col-1 text-h5 q-py-md">projetos</span>
         </div>
       </div>
-      <div class="col-3 column bgmagenta text-center items-center">
-        <q-btn outline style="color: #8b50ff" class="col q-ma-lg">
+      <div class="col-3 row bgmagenta text-center items-center">
+        <q-btn outline style="color: #8b50ff" class="col q-ma-lg" href = 'https://bit.ly/ResultadoLabicT' target='_blank'>
           <p class="text-white text-h6">
             Confira a lista dos
             <br />Projetos Participantes
+          </p>
+        </q-btn>
+
+        <q-btn outline style="color: #8bf0ff" class="col q-ma-lg" href = ' https://bit.ly/ResumoLabicT' target='_blank'>
+          <p class="text-white text-h6">
+            Confira os resumos
           </p>
         </q-btn>
       </div>
@@ -474,7 +482,7 @@
     </div>
     <div class="col-1 row items-center">
       <q-separator class="col" size="3px" color="black"></q-separator>
-      <q-btn outline class="col" label="ACESSE A PROGRAMAÇÃO COMPLETA"></q-btn>
+      <q-btn outline class="col" label="ACESSE A PROGRAMAÇÃO COMPLETA" href='https://www.youtube.com/watch?v=Zuzm1BaDM_M&list=PLT6dlUCLrobD1Rm9Ac9GT73BjwBTTTZ7c' target='_blank'></q-btn>
       <q-separator class="col" size="3px" color="black"></q-separator>
     </div>
   </q-page>
@@ -499,6 +507,8 @@
         id="rounder3"
         class="magenta text-h6 col-1 text-center"
         label="ACESSE AQUI O RELATÓRIO COMPLETO!"
+        href ='https://bit.ly/labic2020'
+        target = '_blank'
       ></q-btn>
     </div>
     <div class="col q-pa-xl column justify-center text-left">
@@ -534,7 +544,7 @@
         </div>
       </div>
       <div class="col-3 column bgyellow text-center items-center">
-        <q-btn style="border: 3px solid #ff4aa1" class="col q-ma-lg">
+        <q-btn style="border: 3px solid #ff4aa1" class="col q-ma-lg" href='https://bit.ly/LABIC2020_PROJETOS_SELECIONADOS' target ='_blank'>
           <p class="text-black text-h6">
             Confira a lista dos
             <br />Projetos Participantes
@@ -583,7 +593,7 @@
     </div>
     <div class="col-1 row items-center">
       <q-separator class="col" size="3px" color="black"></q-separator>
-      <q-btn outline class="col" label="ACESSE A PROGRAMAÇÃO COMPLETA"></q-btn>
+      <q-btn outline class="col" label="ACESSE A PROGRAMAÇÃO COMPLETA" href='https://www.youtube.com/watch?v=c7v6gca2BqQ&list=PLT6dlUCLrobAV6b3H0iRnZZRVxuqj4jZk' target = '_blank'></q-btn>
       <q-separator class="col" size="3px" color="black"></q-separator>
     </div>
   </q-page>
@@ -682,11 +692,17 @@
           <span class="col-1 text-h5 q-py-md">projetos</span>
         </div>
       </div>
-      <div class="col-3 column bgpink text-center items-center">
-        <q-btn outline color="white" class="col q-ma-lg">
+      <div class="col-3 row bgpink text-center items-center">
+        <q-btn outline color="white" class="col q-ma-lg" href ='https://drive.google.com/file/d/1SaxV27ECuxNdrHv0McCyVgVh4FwjjUaZ/view?usp=sharing 
+' target='_blank'>
           <p class="yellow text-h6">
             Confira a lista dos
             <br />Projetos Participantes
+          </p>
+        </q-btn>
+        <q-btn outline color="gray" class="col q-ma-lg" href='https://drive.google.com/file/d/16Mfm7FYsmX0yLi9chQ5WEVOg9qgEyWCp/view?usp=sharing' target='_blank' >
+          <p class="yellow text-h6">
+            Projetos na íntegra 
           </p>
         </q-btn>
       </div>
@@ -1078,21 +1094,21 @@
       :items="mentores"
       virtual-scroll-horizontal
     >
-      <template v-slot="{ item, index }">
-        <q-card class="q-ma-xl">
+      <template v-slot="{ item }">
+        <q-card class="q-ma-xl mycard">
           <q-img
             class="q-ma-md"
-            src="https://cdn.quasar.dev/img/mountains.jpg"
+            :src="item.imagem"
+            fit='cover'
+            height="150px"
+            width="150px"
           />
 
           <q-card-section>
             <div class="text-h6">{{ item.nome }}</div>
-            <div class="text-subtitle2">by John Doe</div>
+            <div class="text-subtitle2">{{item.descricao}}</div>
           </q-card-section>
 
-          <q-card-section class="q-pt-none">
-            {{ item + index }}
-          </q-card-section>
         </q-card>
       </template>
     </q-virtual-scroll>
@@ -1136,25 +1152,25 @@ export default defineComponent({
       ],
 
       mentores: [
-        { imagem: "", nome: "THIAGO VINÍCIUS,", descricao: "", video: null },
-        { imagem: "", nome: "DRÍADE AGUIAR", descricao: "", video: null },
-        { imagem: "", nome: "PRETO ZEZÉ", descricao: "", video: null },
-        { imagem: "", nome: "RAUL SANTIAGO", descricao: "", video: null },
-        { imagem: "", nome: "RENE SILVA", descricao: "", video: null },
-        { imagem: "", nome: "MARCUS FAUSTINI", descricao: "", video: null },
-        { imagem: "", nome: "JOAQUIM MELO,", descricao: "", video: null },
-        { imagem: "", nome: "FÁVIA MACÊDO", descricao: "", video: null },
-        { imagem: "", nome: "FELIPE ALTENFELDER,", descricao: "", video: null },
-        { imagem: "", nome: "THIAGO SCHERER,", descricao: "", video: null },
-        { imagem: "", nome: "DANIELE MOURA", descricao: "", video: null },
-        { imagem: "", nome: "FELIPE CARUSO", descricao: "", video: null },
-        { imagem: "", nome: "BRUNO F. DUARTE,", descricao: "", video: null },
-        { imagem: "", nome: "OTÁVIO RIBEIRO,", descricao: "", video: null },
-        { imagem: "", nome: "AYRA CONSULTORIA", descricao: "", video: null },
-        { imagem: "", nome: "OLIVER KORNBLIHTT", descricao: "", video: null },
-        { imagem: "", nome: "ADRIANO BELISÁRIO", descricao: "", video: null },
-        { imagem: "", nome: "RAÍSA GALVÃO", descricao: "", video: null },
-        { imagem: "", nome: "LORI REGATTIERI,", descricao: "", video: null },
+        { imagem: "images/Thiago Vinícius.jpg", nome: "THIAGO VINÍCIUS,", descricao: "fundador da Agência Popular Solano Trindade, é empreendedor social e liderança comunitária que propõe tecnologias sociais que colaboram para geração de renda através de startups focadas em desenvolver serviços e produtos que dialoguem com a qualidade de vida do morador da favela.", video: null },
+        { imagem: "images/Dríade Aguiar.png", nome: "DRÍADE AGUIAR", descricao: "da Mídia Ninja, é co-fundadora e editora do Mídia Ninja, ativista do Fora do Eixo, feminista negra, militante body positive. Ela compartilhou com o laboratório alguns segredos da gestão e do monitoramento das redes sociais para a produção de conteúdo e disputa de narrativas.", video: null },
+        { imagem: "images/Preto Zeze.jpg", nome: "PRETO ZEZÉ", descricao: "presidente da Central Única das Favelas (CUFA), fez a primeira mentoria do Labic 2021. Empresário, produtor musical e repórter. É o CEO e fundador do Laboratório de Inovação Social, onde trabalha questões próximas às do Labic. ", video: null },
+        { imagem: "images/Raull Santiago.jpg", nome: "RAUL SANTIAGO", descricao: " é uma das principais lideranças da favela em nosso país. Fundador da Agência BRECHA e do Coletivo Papo Reto, é integrante de iniciativas e plataformas que versam sobre periferia, direitos humanos, juventude e desenvolvimento sustentável nas favelas.", video: null },
+        { imagem: "images/Rene Silva.jpg", nome: "RENE SILVA", descricao: " é uma das principais lideranças da favela em nosso país. Fundador da Agência BRECHA e do Coletivo Papo Reto, é integrante de iniciativas e plataformas que versam sobre periferia, direitos humanos, juventude e desenvolvimento sustentável nas favelas.", video: null },
+        { imagem: "images/Marcus Faustini.jpg", nome: "MARCUS FAUSTINI", descricao: "Marcus Faustinié criador da metodologia da Agência de Redes para Juventudes, que potencializa jovens de favelas e periferias a transformarem ideias em projetos de intervenção em seus territórios.", video: null },
+        { imagem: "images/Joaquim melo.jpg", nome: "JOAQUIM MELO,", descricao: 'criador do Banco Palmas (@bancopalmas), empreendedor social criou a "socioeconomia solidária" em 1998, no Conjunto Palmeira, um bairro popular de Fortaleza (CE).', video: null },
+        { imagem: "images/Flavia Macedo.png", nome: "FÁVIA MACÊDO", descricao: "é escritora, empreendedora social, vice-presidente do Educar+ (@projeto.educar.mais) e construtora de comunidade da Rede Muda Outras Economias (@mudaoutraseconomias).", video: null },
+        { imagem: "images/Felipe Altenfelder,.jpg", nome: "FELIPE ALTENFELDER,", descricao: "gestor da Mídia Ninja e do Fora do Eixo, articulador do projeto S.O.M (Sistema Operacional da Música, plataforma de conteúdo e aceleração de oportunidades), e da plataforma 342 de ativismo.", video: null },
+        { imagem: "images/Thiago Scherer.jpg", nome: "THIAGO SCHERER,", descricao: "fundador do Design Ativista (@designativista) e gestor da frente de design da Mídia NINJA e do coletivo Fora do Eixo (@foradoeixo).", video: null },
+        { imagem: "images/Daniele Moura.jpg", nome: "DANIELE MOURA", descricao: "é editora do Maré de Notícias (@maredenoticias). É jornalista premiada e apaixonada por periferias e favelas do Brasil.", video: null },
+        { imagem: "images/Felipe Caruso.jpg", nome: "FELIPE CARUSO", descricao: "Felipe Caruso, jornalista, consultor de crowdfunding e capacitor de fluxos. Foi coordenador de comunicação do Catarse e repórter na Folha de S. Paulo.", video: null },
+        { imagem: "images/Bruno Duarte.jpeg", nome: "BRUNO F. DUARTE,", descricao: "é cineasta, pesquisador, performer e ativista do movimento negro LGBT. É criador da CABINE - Da galeria ao banheirão! , plataforma para a expansão de ideias sobre artistas negros/as LGBT.", video: null },
+        { imagem: "images/Luís Otávio Ribeiro.jpg", nome: "OTÁVIO RIBEIRO,", descricao: "um dos co-fundadores do Catarse, plataforma pioneira e uma das maiores referências em financiamento coletivo no Brasil. ", video: null },
+        { imagem: "images/AYRA.jpg", nome: "AYRA CONSULTORIA", descricao: "é uma Empresa Júnior de Gestão de Negócios vinculada à UFRJ. Possui 18 anos de mercado, +20 prêmios recebidos e tem como propósito entregar soluções personalizadas para o seu negócio e/ou projetos. ", video: null },
+        { imagem: "images/oliver kornblihtt.png", nome: "OLIVER KORNBLIHTT", descricao: "fotógrafo, ativista e editor da mídia ninja. Integra o coletivo Fora do Eixo e é gestor da frente projeto da NINJA.", video: null },
+        { imagem: "images/Adriano Belisário 1.jpg", nome: "ADRIANO BELISÁRIO", descricao: "é Coordenador da Escola de Dados na Open Knowledge Brasil e pesquisador do MediaLab UFRJ. ", video: null },
+        { imagem: "images/Raissa Galvão.jpg", nome: "RAÍSA GALVÃO", descricao: "fundadora e coordenadora nacional da Mídia NINJA, além de editora das redes sociais e da editoria de opinião e meio ambiente.", video: null },
+        { imagem: "images/Lori Regattieri.jpg", nome: "LORI REGATTIERI,", descricao: "Lori Regattieri,cientista de Dados, co-editora da revista DR e pesquisadora na ECO/UFRJ.", video: null },
       ],
       slide: ref("style"),
       ultimasMentorias: [
@@ -1362,4 +1378,10 @@ export default defineComponent({
   font-size: 10rem;
   line-height: 1;
 }
+
+.mycard{
+  min-width: 200px;
+}
+
+
 </style>
