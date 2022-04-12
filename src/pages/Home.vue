@@ -44,7 +44,7 @@
   </q-page>
 
   <q-page id="oprojeto" class="row">
-    <div class="projeto-left q-pa-xl col-5 text-right column justify-center">
+    <div class="projeto-left q-pa-xl col-md-5 col-sm-12 text-right column justify-center">
       <div class="projeto-header col-auto">
         <p class="align-center no-padding no-margin text-no-wrap">O PROJETO</p>
         <q-separator size="5px" color="purple-13"></q-separator>
@@ -56,7 +56,7 @@
       </p>
     </div>
     <div
-      class="col-7 flex projeto-right q-pl-xl q-pt-xl q-pr-sm vertical-middle"
+      class="col-md-7 col-sm-12 flex projeto-right q-pl-xl q-pt-xl q-pr-sm vertical-middle"
       vertical-middle
     >
       <p>
@@ -86,7 +86,7 @@
   </q-page>
 
   <q-page class="projeto2 q-pa-xl row">
-    <div class="col column justify-center text-white text-right">
+    <div class="col-md-auto col-sm-12 column justify-center text-white text-right">
       <p class="col-auto text-h5 q-pa-sm">
         Os Laboratórios de Inovação Cidadã, os Labics, são baseados numa
         metodologia que valoriza a formação de equipes de trabalho
@@ -100,7 +100,7 @@
         pesquisas e iniciativas.
       </p>
     </div>
-    <div class="q-pa-xl col-6 text-left column justify-center">
+    <div class="q-pa-xl col-md-6 col-sm-12 text-left column justify-center">
       <div class="projeto-header col-auto">
         <p class="align-center no-padding no-margin text-no-wrap">O PROJETO</p>
         <q-separator size="5px" color="purple-13"></q-separator>
@@ -170,39 +170,89 @@
 
   <q-page id="inscricoes" class="hero row q-pa-xl">
     <div id="aovivo" class="vertical-text col-1 q-mx-sm">
-      <p class="color-primary text-uppercase">Inscrições</p>
+      <span class="color-primary text-uppercase" style="font-size: 4rem">Inscrições</span>
+            <span class="yellow text-uppercase" style="font-size: 2.5rem"> - Projetos</span>
     </div>
-
     <div class="col column q-ma-md justify-center items-center">
       <p class="col-auto text-h2 text-white text-center">
-        Estão abertas até o dia 30 de setembro
+        Inscrição para Projetos Favela e Universidade - Labic 2022 Encerrada
       </p>
       <p class="col-auto text-h4 text-white text-center">
-        as inscrições para o Monitora Labic. Nesta edição, vamos selecionar 13
-        projetos que já participaram de alguma edição anterior. Serão oferecidos
-        mentorias específicas para recomeçar e fortalecer suas atividades.
       </p>
       <q-btn
         id="rounder"
         size="xl"
         style="width: 40%; background: #ff4aa1"
         class="q-ma-xl text-white"
-        label="ACESSE A CHAMADA"
+        label="Inscreva-se"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdKeWLXVWHU_Kws6qPawkudaT5VEoMKtym16pOP3sqX-yZ5pg/viewform"
+        target="_blank"
+        disable
       ></q-btn>
     </div>
+
+  </q-page>
+
+    <q-page id="" class="hero row q-pa-xl">
+    <div id="aovivo" class="vertical-text col-1 q-mx-sm">
+      <span class="color-primary text-uppercase" style="font-size: 4rem">Inscrições</span>
+            <span class="yellow text-uppercase" style="font-size: 2.5rem"> - Colaboradores</span>
+    </div>
+    <div class="col column q-ma-md justify-center items-center">
+      <p class="col-auto text-h2 text-white text-center">
+        Inscrição para Colaboradores Favela e Universidade - Labic 2022 Até 25 de Abril
+      </p>
+      <p class="col-auto text-h4 text-white text-center">
+       Inscreva-se como colaborador e participe de todos os encontros e mentorias. Os colaboradores auxiliam no desenvolvimento dos projetos e participam todas as sextas-feiras das 14h às 18h e, caso finalizem o laboratório com êxito, recebem um certificado de 100h de extensão.
+      </p>
+
+      <div class="row">
+      <q-btn
+        id="rounder"
+        size="xl"
+        style="width: 40%; background: #ff4aa1"
+        class="q-ma-md text-white"
+        label="Acesse a chamada"
+        href="https://drive.google.com/file/d/1VSJAs83_PxsWT7TFuHzAghZmVvg7TXof/view"
+        target="_blank"
+      ></q-btn>
+      <q-btn
+        id="rounder"
+        size="xl"
+        style="width: 40%; background: #ff4aa1"
+        class="q-ma-md text-white"
+        label="Inscreva-se"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdKeWLXVWHU_Kws6qPawkudaT5VEoMKtym16pOP3sqX-yZ5pg/viewform"
+        target="_blank"
+      ></q-btn>
+      </div>
+
+
+    </div>
+
   </q-page>
 
   <q-page id="acoesparticipantes" class="column q-pa-md">
     <h1 class="text-h1 col-2 underlined" style="color: #a0d628">
-      Ações Participantes
+      Ações Participantes - Labic 2022
     </h1>
     <q-separator
       class="col-1"
       size="3px"
       style="background-color: #a0d628"
     ></q-separator>
-    <p class="col-1 text-h3 q-pt-xl">mais informações em breve</p>
-    <div class="col-2 row items-start">
+     <p class="col-1 text-h3 q-pt-xl q-ma-xl">Já está disponível os projetos selecionados do <span class="text-bold">Laboratório de
+Inovação Cidadã Territórios 2022 - Favela e Universidade</span></p>
+      <q-btn
+        id="rounder"
+        size="xl"
+        style="width: 40%; background: #aa4aa1"
+        class="q-ma-md text-white"
+        label="Projetos selecionados"
+        href="https://drive.google.com/file/d/1DtsylrPJJOs_blmFZxgqhOF-s4cIKwm8/view"
+        target="_blank"
+      ></q-btn>
+    <!-- <div class="col-2 row items-start">
       <q-img
         v-for="index in 6"
         :key="index"
@@ -211,7 +261,7 @@
         alt="Inovação Cidadã"
         src="../../public/carousel-icon.svg"
       />
-    </div>
+    </div> -->
     <div class="col-4"></div>
   </q-page>
 
@@ -221,7 +271,7 @@
     >
       PROGRAMAÇÃO
     </div>
-    <div class="col-4 column q-ma-xl">
+    <div class="col-md-4 col-sm-auto column q-ma-xl">
       <q-img
         id="maximg"
         class="col-11 no-padding no-margin"
@@ -244,7 +294,7 @@
         ></q-separator>
       </div>
     </div>
-    <div class="col-6 column">
+    <div class="col-md-6 col-sm-12 column">
       <div
         class="col-2 bgpink text-h3 text-white flex text-center align-center items-center justify-center"
       >
@@ -267,7 +317,7 @@
   </q-page>
 
   <q-page id="edicoesanteriores" class="row bgpink">
-    <div class="col-6 column no-wrap items-center">
+    <div class="col-md-6  col-sm-12 column no-wrap items-center">
       <p class="col-10 text-h5 text-right q-pa-xl">
         Após 5 anos, 7 edições e mais de 180 projetos atendidos, o Laboratório
         de Inovação Cidadà abriu uma chamada em setembro de 2021 para saber a
@@ -292,7 +342,7 @@
         href = 'https://drive.google.com/file/d/1eLt25u7MLNrzVXOVvzutljgwlSE45-_I/view'
       ></q-btn>
     </div>
-    <div class="col q-pa-xl column justify-center">
+    <div class="col-md-6 col-sm-12 q-pa-xl column justify-center">
       <p class="col-1 text-h4 no-padding no-margin yellow">
         EDIÇÕES ANTERIORES
       </p>
@@ -305,7 +355,7 @@
   </q-page>
 
   <q-page class="row bgmagenta no-padding no-margin">
-    <div class="col-6 column bg-white q-my-xl">
+    <div class="col-md-6 col-sm-12 column bg-white q-my-xl">
       <div class="col-9 items-center flex no-wrap q-mx-xl">
         <span class="ultralarge yellow">15</span>
         <span class="text-h5 q-ml-md">projetos</span>
@@ -326,7 +376,7 @@
       id="tesst"
       :ratio="16 / 9"
       fit="fill"
-      class="col-6 q-my-xl"
+      class="col-md-6 col-sm-12 q-my-xl"
       src="images/Screen Shot 2022-02-15 at 10.51.08.png"
     />
   </q-page>
@@ -348,7 +398,7 @@
           v-for="index in 3"
           :key="index"
           fit="fill"
-          src="images/WhatsApp Image 2021-06-22 at 18.42.39.jpeg"
+          :src="`images/monitora-${index}.png`"
         />
       </div>
     </div>
@@ -372,7 +422,7 @@
   </q-page>
 
   <q-page class="row">
-    <div class="col bgyellow q-pa-xl column justify-center text-right">
+    <div class="col-md-6 col-sm-12 bgyellow q-pa-xl column justify-center text-right">
       <p class="col-1 text-h4 no-padding no-margin magenta">
         EDIÇÕES ANTERIORES
       </p>
@@ -384,7 +434,7 @@
       <p class="col-3 text-h1 q-pt-xl text-white">LABIC 2021</p>
       <p class="col-3 text-h2 text-white">EDIÇÃO TERRITÓRIOS</p>
     </div>
-    <div class="col-6 bgmagenta column no-wrap items-center">
+    <div class="col-md-6 col-sm-12 bgmagenta column no-wrap items-center">
       <p class="col-10 text-h5 text-right text-white q-pa-xl">
         A urgência de vida trazida pela pandemia, sentida de forma ainda mais
         profunda nas periferias, nos fez testemunhar que as respostas mais
@@ -409,10 +459,10 @@
       id="tesst"
       :ratio="16 / 9"
       fit="fill"
-      class="col-6 q-mb-xl"
+      class="col-md-6 col-sm-12 q-mb-xl"
       src="images/Screen Shot 2022-02-15 at 11.19.47.png"
     />
-    <div class="col-6 column bg-white q-mb-xl">
+    <div class="col-md-6 col-sm-12 column bg-white q-mb-xl">
       <div class="col-9 row">
         <div class="col-7 column justify-center">
           <div class="col row items-center">
@@ -464,7 +514,7 @@
           v-for="index in 3"
           :key="index"
           fit="fill"
-          src="images/WhatsApp Image 2021-06-22 at 18.42.39.jpeg"
+          :src="`images/2021-${index}.png`"
         />
       </div>
     </div>
@@ -488,7 +538,7 @@
   </q-page>
 
   <q-page class="row bgyellow">
-    <div class="col-6 column no-wrap items-end q-ma-xl">
+    <div class="col-md-6 col-sm-12 column no-wrap items-end q-ma-xl">
       <p class="col-10 text-h5 text-right">
         2020 trouxe a pandemia do coronavírus, acarretando mudanças na vida da
         maioria das pessoas. Foram tempos de ruas desertas, escolas e
@@ -511,7 +561,7 @@
         target = '_blank'
       ></q-btn>
     </div>
-    <div class="col q-pa-xl column justify-center text-left">
+    <div class="col-md-6 col-sm-12 q-pa-xl column justify-center text-left">
       <p class="col-1 text-h4 no-padding no-margin magenta">
         EDIÇÕES ANTERIORES
       </p>
@@ -522,7 +572,7 @@
   </q-page>
 
   <q-page class="row bgpurple no-padding no-margin">
-    <div class="col-6 column bg-white q-mb-xl">
+    <div class="col-md-6 col-sm-12 column bg-white q-mb-xl">
       <div class="col-9 row">
         <div class="col-7 column justify-center">
           <div class="col row items-center">
@@ -556,7 +606,7 @@
       id="tesst"
       :ratio="16 / 9"
       fit="fill"
-      class="col-6 q-mb-xl"
+      class="col-md-6 col-sm-12 q-mb-xl"
       src="images/Screen Shot 2022-02-15 at 11.19.47.png"
     />
   </q-page>
@@ -569,7 +619,7 @@
           v-for="index in 3"
           :key="index"
           fit="fill"
-          src="images/WhatsApp Image 2021-06-22 at 18.42.39.jpeg"
+          :src="`images/2020-${index}.png`"
         />
       </div>
       <div class="col-5 column text-right text-white">
@@ -607,7 +657,7 @@
       <p class="col-3 text-h1 q-pt-xl yellow">LABIC 2019</p>
       <p class="col-3 text-h2 yellow">EDIÇÃO RIO</p>
     </div>
-    <div class="col-6 column no-wrap items-center">
+    <div class="col-md-6 col-sm-12column no-wrap items-center">
       <p class="col-12 text-h5 text-left q-pa-xl text-white">
         2019 foi um ano intenso. Além da edição anual, realizamos outras duas
         edições do Labic em formato reduzido, duas visitas técnicas e um ciclo
@@ -630,7 +680,7 @@
   </q-page>
 
   <q-page class="row bgmagenta">
-    <div class="col-6 column no-wrap">
+    <div class="col-md-6 col-sm-12 column no-wrap">
       <p class="col-10 q-px-md text-h5 text-right q-pa-xl text-white">
         Foram 25 projetos atendidos por 11 mentores e 5 conferencistas que
         abordaram temas como: redes e narrativas; aplicativos e tecnologias do
@@ -649,7 +699,7 @@
       </p>
       <p class="col-2 text-h2 q-pl-xl text-left yellow">RIO 2019</p>
     </div>
-    <div class="col-6 column no-wrap">
+    <div class="col-md-6 col-sm-12 column no-wrap">
       <p class="col-12 q-px-md text-h5 text-left q-pa-xl text-white">
         Nossa consagrada edição regular anual do Labic foi realizada de setembro
         a dezembro de 2019. Reuniu projetos, colaboradores e mentores às
@@ -670,8 +720,8 @@
   </q-page>
 
   <q-page class="row bgyellow no-padding no-margin">
-    <q-img id="tesst" fit="fill" class="col-7 q-mb-xl" src="images/2019.jpg" />
-    <div class="col-5 column bg-white q-mb-xl">
+    <q-img id="tesst" fit="fill" class="col-md-7 col-sm-12 q-mb-xl" src="images/2019.jpg" />
+    <div class="col-md-5 col-sm-12 column bg-white q-mb-xl">
       <div class="col-9 row">
         <div class="col-7 column justify-center">
           <div class="col row items-center">
@@ -693,7 +743,7 @@
         </div>
       </div>
       <div class="col-3 row bgpink text-center items-center">
-        <q-btn outline color="white" class="col q-ma-lg" href ='https://drive.google.com/file/d/1SaxV27ECuxNdrHv0McCyVgVh4FwjjUaZ/view?usp=sharing 
+        <q-btn outline color="white" class="col q-ma-lg" href ='https://drive.google.com/file/d/1SaxV27ECuxNdrHv0McCyVgVh4FwjjUaZ/view?usp=sharing
 ' target='_blank'>
           <p class="yellow text-h6">
             Confira a lista dos
@@ -702,7 +752,7 @@
         </q-btn>
         <q-btn outline color="gray" class="col q-ma-lg" href='https://drive.google.com/file/d/16Mfm7FYsmX0yLi9chQ5WEVOg9qgEyWCp/view?usp=sharing' target='_blank' >
           <p class="yellow text-h6">
-            Projetos na íntegra 
+            Projetos na íntegra
           </p>
         </q-btn>
       </div>
@@ -710,7 +760,7 @@
   </q-page>
 
   <q-page class="bgmagenta row">
-    <div class="col-5 column no-wrap">
+    <div class="col-md-5 col-sm-12 column no-wrap">
       <q-img
         class="col-6 q-mb-sm"
         src="images/27.9 primeiro encontro c colabs.jpg"
@@ -722,7 +772,7 @@
         src="images/70817574_2523949274314774_1584828428119441408_n.jpg"
       />
     </div>
-    <div class="col-7 column no-wrap q-pl-sm">
+    <div class="col-md-7 col-sm-12 column no-wrap q-pl-sm">
       <div class="col-2 self-center">
         <span class="text-h3 text-white">
           PROGRAMAÇÃO
@@ -737,18 +787,18 @@
       />
 
       <div class="col-1 self-center q-pa-md">
-        <q-btn
+        <!-- <q-btn
           unelevated
           color="yellow"
           class="text-black"
           label="ACESSE A PROGRAMAÇÃO COMPLETA"
-        ></q-btn>
+        ></q-btn> -->
       </div>
     </div>
   </q-page>
 
   <q-page class="row">
-    <div class="col-6 column no-wrap items-center bgyellow">
+    <div class="col-md-6 col-sm-12 column no-wrap items-center bgyellow">
       <p class="col-12 text-h5 text-right q-pa-xl">
         Nosso ciclo formativo em fluxo seguiu para a cidade de Salvador (BA)
         durante o Simpósio Internacional LAVITS: Assimetrias e
@@ -765,7 +815,7 @@
         mentorias de redes sociais, design e construção de aplicativos.
       </p>
     </div>
-    <div class="col q-pa-xl column bgpink justify-center text-left">
+    <div class="col-md-6 col-sm-12 q-pa-xl column bgpink justify-center text-left">
       <p class="col-1 text-h4 no-padding no-margin yellow">
         EDIÇÕES ANTERIORES
       </p>
@@ -776,7 +826,7 @@
   </q-page>
 
   <q-page class="row bgmagenta no-padding no-margin">
-    <div class="col-6 column bg-white q-mb-xl">
+    <div class="col-md-6 col-sm-12 column bg-white q-mb-xl">
       <div class="col-9 row q-mx-xl">
         <div class="col-8 column justify-evenly">
           <div class="col-6 row items-end">
@@ -805,13 +855,13 @@
     <q-img
       id="tesst"
       fit="cover"
-      class="col-6 q-mb-xl"
+      class="col-md-6 col-sm-12 q-mb-xl"
       src="images/BA 2019.png"
     />
   </q-page>
 
   <q-page class="bgmagenta row">
-    <div class="col-5 column no-wrap">
+    <div class="col-md-5 col-sm-12 column no-wrap">
       <q-img
         class="col-6 q-mb-sm"
         src="images/pense-em-libras-min-1024x560.png"
@@ -819,7 +869,7 @@
       />
       <q-img class="col-6" fit="fill" src="images/iami-agbá-min-1024x559.png" />
     </div>
-    <div class="col-7 column no-wrap q-pl-sm">
+    <div class="col-md-7 col-sm-12 column no-wrap q-pl-sm">
       <div class="col-2 self-center">
         <span class="text-h3 text-white">
           PROGRAMAÇÃO
@@ -831,25 +881,25 @@
       <q-img class="col-9" src="images/femini-2-min-1024x576.png" fit="fill" />
 
       <div class="col-1 self-center q-pa-md">
-        <q-btn
+        <!-- <q-btn
           unelevated
           color="yellow"
           class="text-black"
           label="ACESSE A PROGRAMAÇÃO COMPLETA"
-        ></q-btn>
+        ></q-btn> -->
       </div>
     </div>
   </q-page>
 
   <q-page class="row bgpink">
-    <div class="col q-pa-xl column justify-center text-right">
+    <div class="col-md-6 col-sm-12 q-pa-xl column justify-center text-right">
       <p class="col-1 text-h4 no-padding no-margin yellow">
         EDIÇÕES ANTERIORES
       </p>
       <q-separator class="col-1 yellow" color="yellow" size="3px"></q-separator>
       <p class="col-3 text-h1 q-pt-xl text-white">LABIC 2018</p>
     </div>
-    <div class="col-6 row justify-center items-center q-pa-xl">
+    <div class="col-md-6 col-sm-12 row justify-center items-center q-pa-xl">
       <p class="col text-h5 text-left text-black">
         Em 2018, o Labic foi desafiado a alcançar voos mais amplos. Com apoio da
         UFRJ, renovamos e consolidamos o projeto e de suas atividades, que já
@@ -869,8 +919,8 @@
   </q-page>
 
   <q-page class="row bgmagenta">
-    <q-img id="tesst" fit="cover" class="col-6 q-mb-xl" src="images/2018.jpg" />
-    <div class="col-6 column bg-white q-mb-xl">
+    <q-img id="tesst" fit="cover" class="col-md-6 col-sm-12 q-mb-xl" src="images/2018.jpg" />
+    <div class="col-md-6 col-sm-12 column bg-white q-mb-xl">
       <div class="col-9 row q-mx-md">
         <div class="col-9 column justify-evenly">
           <div class="col-6 row items-end">
@@ -899,7 +949,7 @@
   </q-page>
 
   <q-page class="bgpink row">
-    <div class="col-5 column no-wrap">
+    <div class="col-md-5 col-sm-12 column no-wrap">
       <img class="col-6 q-mb-sm" src="images/26.jpg" fit="fill" />
       <img
         class="col-6"
@@ -907,7 +957,7 @@
         src="images/45687332_2023787100997663_8309980793921339392_n.jpg"
       />
     </div>
-    <div class="col-7 column no-wrap q-pl-sm">
+    <div class="col-md-7 col-sm-12 column no-wrap q-pl-sm">
       <div class="col-2 self-center row items-center">
         <span class="text-h3 col text-white">
           PROGRAMAÇÃO
@@ -922,25 +972,25 @@
       />
 
       <div class="col-2 self-center q-pa-md">
-        <q-btn
+        <!-- <q-btn
           unelevated
           color="yellow"
           class="text-black"
           label="ACESSE A PROGRAMAÇÃO COMPLETA"
-        ></q-btn>
+        ></q-btn> -->
       </div>
     </div>
   </q-page>
 
   <q-page class="row">
-    <div class="col q-pa-xl bgyellow column justify-center text-right">
+    <div class="col-md-6 col-sm-12 q-pa-xl bgyellow column justify-center text-right">
       <p class="col-1 text-h4 no-padding no-margin magenta">
         EDIÇÕES ANTERIORES
       </p>
       <q-separator class="col-1 yellow bgmagenta" size="3px"></q-separator>
       <p class="col-3 text-h1 q-pt-xl magenta">LABIC 2017</p>
     </div>
-    <div class="col-6 row justify-center bgmagenta items-center q-pa-xl">
+    <div class="col-md-6 col-sm-12 row justify-center bgmagenta items-center q-pa-xl">
       <p class="col text-h5 text-left text-white">
         O Labic foi implementado na Escola de Comunicação da UFRJ em 2017. O
         laboratório incidiu em toda a Região Metropolitana fluminense. Teve
@@ -959,7 +1009,7 @@
   </q-page>
 
   <q-page class="row bgpink no-padding no-margin">
-    <div class="col-6 column bg-white q-mb-xl">
+    <div class="col-md-6 col-sm-12 column bg-white q-mb-xl">
       <div class="col-9 row">
         <div class="col-7 column justify-center">
           <div class="col row items-center">
@@ -993,13 +1043,13 @@
       id="tesst"
       :ratio="16 / 9"
       fit="fill"
-      class="col-6 q-mb-xl"
+      class="col-md-6 col-sm-12 q-mb-xl"
       src="images/Screen Shot 2022-02-15 at 11.19.47.png"
     />
   </q-page>
 
   <q-page class="bgyellow row">
-    <div class="col-5 column no-wrap">
+    <div class="col-md-5 col-sm-12 column no-wrap">
       <img
         class="col-6 q-mb-sm"
         src="images/22904764_1583326375043740_1146566215308148923_o.jpg"
@@ -1007,7 +1057,7 @@
       />
       <img class="col-6" fit="fill" src="images/9.jpg" />
     </div>
-    <div class="col-7 column no-wrap q-pl-sm">
+    <div class="col-md-7 col-sm-12 column no-wrap q-pl-sm">
       <div class="col-2 self-center row items-center">
         <span class="text-h3 col text-white">
           PROGRAMAÇÃO
@@ -1022,17 +1072,17 @@
       />
 
       <div class="col-2 self-center q-pa-md">
-        <q-btn
+        <!-- <q-btn
           unelevated
           class="text-white bgmagenta"
           label="ACESSE A PROGRAMAÇÃO COMPLETA"
-        ></q-btn>
+        ></q-btn> -->
       </div>
     </div>
   </q-page>
 
   <q-page id="mentores" class="row bgpurple">
-    <div class="col column justify-center text-right q-px-xl">
+    <div class="col-md-4 col-sm-12 column justify-center text-right q-px-xl">
       <div>
         <span class="text-h2 yellow">MENTORES E COLABORADORES</span>
         <q-separator class="q-mb-md q-mt-sm bgyellow" size="5px"></q-separator>
@@ -1043,7 +1093,7 @@
         >
       </div>
     </div>
-    <div class="col column justify-center text-left q-px-xl">
+    <div class="col-md-4 col-sm-12 column justify-center text-left q-px-xl">
       <div>
         <p class="text-h3 yellow">Mentores</p>
         <p class="text-white text-h5">
@@ -1065,7 +1115,7 @@
       </div>
     </div>
 
-    <div class="col column justify-center text-left q-px-xl">
+    <div class="col-md-4 col-sm-12 column justify-center text-left q-px-xl">
       <div>
         <q-icon name="img:Asset 2.svg" size="300px" />
       </div>
@@ -1095,13 +1145,13 @@
       virtual-scroll-horizontal
     >
       <template v-slot="{ item }">
-        <q-card class="q-ma-xl mycard">
+        <q-card class=" q-ma-xl mycard">
           <q-img
-            class="q-ma-md"
+            class=" centered center q-ma-md"
             :src="item.imagem"
             fit='cover'
-            height="150px"
-            width="150px"
+            height="220px"
+            width="220px"
           />
 
           <q-card-section>
@@ -1125,7 +1175,7 @@
     <div class="col-9 column  justify-center ">
       <p class="col-2 magenta   q-mt-xl q-mx-xl text-h4 text-uppercase">baixe aqui nossas cartilhas apresentadas pela nossa equipe</p>
       <div class="col-8 q-px-xl">
-        <q-btn color="teal" rounded class="q-mx-md q-my-sm"  v-for="material in materiais" :key="material" :label='material' size="xl"></q-btn>
+        <q-btn :color="material.cor" rounded class="q-mx-md q-my-sm"  v-for="material in materiais" :key="material" :label='material.texto' size="xl"></q-btn>
       </div>
     </div>
     <div class="col-2">
@@ -1143,17 +1193,17 @@ export default defineComponent({
   data: function () {
     return {
       materiais : [
-        'Como construir mapas de narrativas',
-        'Modelos de Mapa',
-        'Guia para cada grupo baixar e construir a sua narrativa',
-        'Gestão e Marketing',
-        'Novas Economias: Banco Palma',
-        'Fundo Rotativo Solidário do Fórum de Cooperativismo Popular'
+        {cor:'cyan-14', texto:'Como construir mapas de narrativas'},
+        {cor:'purple-13', texto:'Modelos de Mapa'},
+        {cor:'yellow-8', texto:'Guia para cada grupo baixar e construir a sua narrativa'},
+        {cor:'purple-13', texto:'Gestão e Marketing'},
+        {cor:'cyan-14', texto:'Novas Economias: Banco Palma'},
+        {cor:'light-green-8', texto:'Fundo Rotativo Solidário do Fórum de Cooperativismo Popular'}
       ],
 
       mentores: [
-        { imagem: "images/Thiago Vinícius.jpg", nome: "THIAGO VINÍCIUS,", descricao: "fundador da Agência Popular Solano Trindade, é empreendedor social e liderança comunitária que propõe tecnologias sociais que colaboram para geração de renda através de startups focadas em desenvolver serviços e produtos que dialoguem com a qualidade de vida do morador da favela.", video: null },
-        { imagem: "images/Dríade Aguiar.png", nome: "DRÍADE AGUIAR", descricao: "da Mídia Ninja, é co-fundadora e editora do Mídia Ninja, ativista do Fora do Eixo, feminista negra, militante body positive. Ela compartilhou com o laboratório alguns segredos da gestão e do monitoramento das redes sociais para a produção de conteúdo e disputa de narrativas.", video: null },
+        { imagem: "images/thiagovinicius.jpg", nome: "THIAGO VINÍCIUS,", descricao: "fundador da Agência Popular Solano Trindade, é empreendedor social e liderança comunitária que propõe tecnologias sociais que colaboram para geração de renda através de startups focadas em desenvolver serviços e produtos que dialoguem com a qualidade de vida do morador da favela.", video: null },
+        { imagem: "images/Driade Aguiar.png", nome: "DRÍADE AGUIAR", descricao: "da Mídia Ninja, é co-fundadora e editora do Mídia Ninja, ativista do Fora do Eixo, feminista negra, militante body positive. Ela compartilhou com o laboratório alguns segredos da gestão e do monitoramento das redes sociais para a produção de conteúdo e disputa de narrativas.", video: null },
         { imagem: "images/Preto Zeze.jpg", nome: "PRETO ZEZÉ", descricao: "presidente da Central Única das Favelas (CUFA), fez a primeira mentoria do Labic 2021. Empresário, produtor musical e repórter. É o CEO e fundador do Laboratório de Inovação Social, onde trabalha questões próximas às do Labic. ", video: null },
         { imagem: "images/Raull Santiago.jpg", nome: "RAUL SANTIAGO", descricao: " é uma das principais lideranças da favela em nosso país. Fundador da Agência BRECHA e do Coletivo Papo Reto, é integrante de iniciativas e plataformas que versam sobre periferia, direitos humanos, juventude e desenvolvimento sustentável nas favelas.", video: null },
         { imagem: "images/Rene Silva.jpg", nome: "RENE SILVA", descricao: " é uma das principais lideranças da favela em nosso país. Fundador da Agência BRECHA e do Coletivo Papo Reto, é integrante de iniciativas e plataformas que versam sobre periferia, direitos humanos, juventude e desenvolvimento sustentável nas favelas.", video: null },
@@ -1165,11 +1215,11 @@ export default defineComponent({
         { imagem: "images/Daniele Moura.jpg", nome: "DANIELE MOURA", descricao: "é editora do Maré de Notícias (@maredenoticias). É jornalista premiada e apaixonada por periferias e favelas do Brasil.", video: null },
         { imagem: "images/Felipe Caruso.jpg", nome: "FELIPE CARUSO", descricao: "Felipe Caruso, jornalista, consultor de crowdfunding e capacitor de fluxos. Foi coordenador de comunicação do Catarse e repórter na Folha de S. Paulo.", video: null },
         { imagem: "images/Bruno Duarte.jpeg", nome: "BRUNO F. DUARTE,", descricao: "é cineasta, pesquisador, performer e ativista do movimento negro LGBT. É criador da CABINE - Da galeria ao banheirão! , plataforma para a expansão de ideias sobre artistas negros/as LGBT.", video: null },
-        { imagem: "images/Luís Otávio Ribeiro.jpg", nome: "OTÁVIO RIBEIRO,", descricao: "um dos co-fundadores do Catarse, plataforma pioneira e uma das maiores referências em financiamento coletivo no Brasil. ", video: null },
+        { imagem: "images/Luis Otavio Ribeiro.jpg", nome: "OTÁVIO RIBEIRO,", descricao: "um dos co-fundadores do Catarse, plataforma pioneira e uma das maiores referências em financiamento coletivo no Brasil. ", video: null },
         { imagem: "images/AYRA.jpg", nome: "AYRA CONSULTORIA", descricao: "é uma Empresa Júnior de Gestão de Negócios vinculada à UFRJ. Possui 18 anos de mercado, +20 prêmios recebidos e tem como propósito entregar soluções personalizadas para o seu negócio e/ou projetos. ", video: null },
         { imagem: "images/oliver kornblihtt.png", nome: "OLIVER KORNBLIHTT", descricao: "fotógrafo, ativista e editor da mídia ninja. Integra o coletivo Fora do Eixo e é gestor da frente projeto da NINJA.", video: null },
         { imagem: "images/Adriano Belisário 1.jpg", nome: "ADRIANO BELISÁRIO", descricao: "é Coordenador da Escola de Dados na Open Knowledge Brasil e pesquisador do MediaLab UFRJ. ", video: null },
-        { imagem: "images/Raissa Galvão.jpg", nome: "RAÍSA GALVÃO", descricao: "fundadora e coordenadora nacional da Mídia NINJA, além de editora das redes sociais e da editoria de opinião e meio ambiente.", video: null },
+        { imagem: "images/Raissa Galvao.jpg", nome: "RAÍSA GALVÃO", descricao: "fundadora e coordenadora nacional da Mídia NINJA, além de editora das redes sociais e da editoria de opinião e meio ambiente.", video: null },
         { imagem: "images/Lori Regattieri.jpg", nome: "LORI REGATTIERI,", descricao: "Lori Regattieri,cientista de Dados, co-editora da revista DR e pesquisadora na ECO/UFRJ.", video: null },
       ],
       slide: ref("style"),
@@ -1380,7 +1430,8 @@ export default defineComponent({
 }
 
 .mycard{
-  min-width: 200px;
+  min-width: 250px;
+  max-width: 250px;
 }
 
 
