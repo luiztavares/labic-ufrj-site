@@ -170,8 +170,8 @@
 
   <q-page id="inscricoes" class="hero row q-pa-xl">
     <div id="aovivo" class="vertical-text col-1 q-mx-sm">
-      <span class="color-primary text-uppercase" style="font-size: 4rem">Inscrições</span>
-            <span class="yellow text-uppercase" style="font-size: 2.5rem"> - Projetos</span>
+      <span class="color-primary text-uppercase text-h3" >Inscrições</span>
+            <span class="yellow text-uppercase text-h4"> - Projetos</span>
     </div>
     <div class="col column q-ma-md justify-center items-center">
       <p class="col-auto text-h2 text-white text-center">
@@ -195,8 +195,8 @@
 
     <q-page id="" class="hero row q-pa-xl">
     <div id="aovivo" class="vertical-text col-1 q-mx-sm">
-      <span class="color-primary text-uppercase" style="font-size: 4rem">Inscrições</span>
-            <span class="yellow text-uppercase" style="font-size: 2.5rem"> - Colaboradores</span>
+      <span class="color-primary text-uppercase text-h3">Inscrições</span>
+            <span class="yellow text-uppercase text-h4"> - Colaboradores</span>
     </div>
     <div class="col column q-ma-md justify-center items-center">
       <p class="col-auto text-h2 text-white text-center">
@@ -538,7 +538,7 @@ Inovação Cidadã Territórios 2022 - Favela e Universidade</span></p>
   </q-page>
 
   <q-page class="row bgyellow">
-    <div class="col-md-6 col-sm-12 column no-wrap items-end q-ma-xl">
+    <div class="col-md-5 col-sm-12 column no-wrap items-end q-ma-xl">
       <p class="col-10 text-h5 text-right">
         2020 trouxe a pandemia do coronavírus, acarretando mudanças na vida da
         maioria das pessoas. Foram tempos de ruas desertas, escolas e
@@ -561,7 +561,7 @@ Inovação Cidadã Territórios 2022 - Favela e Universidade</span></p>
         target = '_blank'
       ></q-btn>
     </div>
-    <div class="col-md-6 col-sm-12 q-pa-xl column justify-center text-left">
+    <div class="col-md-5 col-sm-12 q-pa-xl column justify-evenly  text-left">
       <p class="col-1 text-h4 no-padding no-margin magenta">
         EDIÇÕES ANTERIORES
       </p>

@@ -10,7 +10,7 @@
             src="../../public/icons/logo.png"
           /></q-btn>
           <q-space />
-          <div>
+          <div class="gt-md">
           <q-btn
             flat
             v-for="link in links"
@@ -19,6 +19,30 @@
             :to="link.hash"
             class="text-no-wrap"
           >
+          </q-btn>
+          </div>
+          <div class="lt-lg">
+          <q-btn flat round dense icon="menu" >
+            <q-menu class="bg-purple text-white" auto-close>
+              <q-list style="min-width: 100vw">
+                <q-item clickable
+                  flat
+            v-for="link in links"
+            :key="link.label"
+            :to="link.hash"
+            class="text-no-wrap"
+                >
+
+                <q-item-section
+
+          >
+                      {{link.label}}
+
+          </q-item-section>
+                          </q-item>
+
+              </q-list>
+            </q-menu>
           </q-btn>
           </div>
       </q-toolbar>
